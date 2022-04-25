@@ -1,9 +1,12 @@
 package CucumberStepDefinition;
 
-import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.codehaus.plexus.util.FileUtils;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -23,7 +26,7 @@ WebDriver driver = null;
         driver = new ChromeDriver();
         System.out.println("Browser is opened");
     }
-    @And("User is on the given page")
+    @And("User is on given page")
     public void userIsOnTheGivenPage()
     {
 
